@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Salvando Huellas</title>
+  <link rel="stylesheet" href="CSS/Header-Footer.css">
+  <link rel="stylesheet" href="CSS/Contacto.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+  <script src="JS/Submenu.js"></script>
+    <!-- Header -->
+<header>
+  <div class="container">
+    <div class="logo">
+      <img src="IMG/Logo.jpg" alt="Logo del refugio">
+    </div>
+    <button class="menu-toggle">☰</button>
+    <nav>
+      <ul class="menu-desktop">
+        <li><a href="Inicio.html">Inicio</a></li>
+        <li><a href="Eventos.html">Eventos</a></li>
+        <li>
+          <a href="#">Adopta / Apadrina <span class="arrow">▼</span></a>
+          <ul class="submenu">
+            <li><a href="Adopcion.html">Adoptar</a></li>
+            <li><a href="Apadrinar.html">Apadrinar</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">Como Ayudar <span class="arrow">▼</span></a>
+          <ul class="submenu">
+            <li><a href="Donar.html">Donar</a></li>
+            <li><a href="Voluntarios.html">Voluntarios</a></li>
+          </ul>
+        </li>
+        <li><a href="Acerca_de.html">Quienes somos</a></li>
+        <li>
+          <a href="">Recursos <span class="arrow">▼</span></a>
+          <ul class="submenu">
+            <li><a href="Blog.html">Blog</a></li>
+            <li><a href="Refugio.html">Refugio</a></li>
+          </ul>
+        </li>
+        <li><a href="Contacto.html">Contacto</a></li>
+      </ul>
+      <ul class="menu-mobile">
+        <li><a href="Inicio.html">Inicio</a></li>
+        <li><a href="Eventos.html">Eventos</a></li>
+        <li>
+          <a href="#">Adopta / Apadrina <span class="arrow">▼</span></a>
+          <ul class="submenu">
+            <li><a href="Adopcion.html">Adoptar</a></li>
+            <li><a href="Apadrinar.html">Apadrinar</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">Como Ayudar <span class="arrow">▼</span></a>
+          <ul class="submenu">
+            <li><a href="Donar.html">Donar</a></li>
+            <li><a href="Voluntarios.html">Voluntarios</a></li>
+          </ul>
+        </li>
+        <li><a href="Acerca_de.html">Quienes somos</a></li>
+        <li>
+          <a href="#">Recursos <span class="arrow">▼</span></a>
+          <ul class="submenu">
+            <li><a href="Blog.html">Blog</a></li>
+            <li><a href="Refugio.html">Refugio</a></li>
+          </ul>
+        </li>
+        <li><a href="Contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<section class="contact-section">
+  <h2>Contacto</h2>
+  <div class="contact-container">
+      <div class="contact-form">
+          <h3>Deja un comentario</h3>
+          <form action="submit_comment.php" method="post">
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" required>
+
+              <label for="message">Message:</label>
+              <textarea id="message" name="message" rows="4" required></textarea>
+
+              <button type="submit" class="btn">Submit</button>
+          </form>
+      </div>
+      <div class="contact-info">
+          <h3>Nuestra direccion</h3>
+          <p>Colonia la kennedy</p>
+          <p>Francisco morazan, comayaguela</p>
+          <img src="IMG/Mapa.jpeg" alt="Map Directions">
+          <div class="social-media">
+              <a href="https://wa.me/your-number" class="social-btn whatsapp"><i class="fab fa-whatsapp"></i></a>
+              <a href="https://www.instagram.com/your-profile" class="social-btn instagram"><i class="fab fa-instagram"></i></a>
+              <a href="https://www.facebook.com/your-page" class="social-btn facebook"><i class="fab fa-facebook-f"></i></a>
+          </div>
+      </div>
+  </div>
+</section>
+
+<!-- Footer Section -->
+<footer>
+  <div class="left">
+      <p>&copy; 2024 Salvando Huellas. Todos los derechos reservados.</p>
+  </div>
+  <div class="right">
+      <a href="https://www.facebook.com/groups/325865846886991?locale=es_LA" target="_blank"><img src="IMG/facebook.png" alt="Facebook"></a>
+      <a href="https://www.instagram.com/salvandohuellasclobi/"><img src="IMG/instagram.png" alt="Instagram"></a>
+      <a href="https://wa.me/50495104236" target="_blank"><img src="IMG/whatsapp.png" alt="Whatsapp"></a>
+  </div>
+</footer>
+</body>
+</html>

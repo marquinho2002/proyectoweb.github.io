@@ -1,0 +1,54 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+  }
+  
+  .about-us {
+    padding: 50px 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-image: url('../IMG/carrusel_foto2.jpg'); /* Asegúrate de que la ruta sea correcta */
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  }
+  
+  .content-container {
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.8;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  .content-container h1, .content-container h2 {
+    color: white;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .content-container h1 {
+    font-size: 36px;
+  }
+  
+  .content-container h2 {
+    font-size: 28px;
+  }
+  
+  .content-container p, .content-container ul {
+    color: white;
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  
+  .content-container ul {
+    list-style-type: disc;
+    margin-left: 40px;
+  }
+  
+  .content-container ul li {
+    margin-bottom: 10px;
+  }

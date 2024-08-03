@@ -1,0 +1,312 @@
+
+.adopt-section {
+  position: relative;
+  width: 100%;
+  height: 450px; 
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.background-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.5); /* Fondo semitransparente para mejorar la legibilidad */
+  border-radius: 10px; 
+  height: 30%;
+}
+
+.adopt-section h1 {
+  margin: 0;
+  font-size: 2.5em;
+}
+
+.adopt-section p {
+  margin: 10px 0 0;
+  font-size: 1.2em;
+}
+
+@media (max-width: 768px) {
+  .adopt-section {
+    height: 350px;
+  }
+  
+  .overlay {
+    width: 60%;
+    height: 40%;
+  }
+  
+  .adopt-section h1 {
+    font-size: 2em;
+  }
+  
+  .adopt-section p {
+    font-size: 1em;
+  }
+}
+
+@media (max-width: 480px) {
+  .adopt-section {
+    height: 300px;
+  }
+  
+  .overlay {
+    width: 80%;
+    height: 50%;
+  }
+  
+  .adopt-section h1 {
+    font-size: 1.5em;
+  }
+  
+  .adopt-section p {
+    font-size: 0.9em;
+  }
+}
+
+/* Estilos para la galería */
+.gallery-section {
+  padding: 50px 20px;
+  text-align: center;
+  background-color: #f0f0f0;
+}
+
+.gallery-section h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.animal-card {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  width: 300px;
+  text-align: center;
+}
+
+.animal-card img {
+  width: 100%;
+  height: auto;
+}
+
+.animal-card h3 {
+  margin: 10px 0 0;
+  font-size: 1.5em;
+}
+
+.animal-card p {
+  margin: 5px 0;
+  font-size: 1em;
+}
+
+.animal-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 768px) {
+  .animal-card {
+    width: 45%;
+  }
+}
+
+@media (max-width: 480px) {
+  .animal-card {
+    width: 100%;
+  }
+}
+
+/* Estilos para la sección de requisitos de adopción */
+.requirements-section {
+  background-color: #f4b600;  
+  color: black;
+  padding: 50px 20px;
+  text-align: center;
+  margin-bottom: 50px; /* Espacio adicional debajo de la sección */
+}
+
+.requirements-section h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.requirements-list {
+  list-style-type: disc;
+  padding-left: 20px;
+  text-align: left;
+  max-width: 800px;
+  margin: 0 auto 20px auto;
+  font-size: 1.2em;
+}
+
+.requirements-list li {
+  margin-bottom: 10px; /* Espacio entre elementos de lista */
+}
+
+.requirements-button {
+  display: inline-block;
+  background-color: #fc3a3a; 
+  color: white;
+  padding: 15px 30px;
+  font-size: 1em;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.requirements-button:hover {
+  background-color: #e02e2e; /* Color del botón al pasar el cursor */
+}
+
+@media (max-width: 768px) {
+  .requirements-list {
+    font-size: 1em;
+  }
+  
+  .requirements-button {
+    padding: 10px 20px;
+    font-size: 0.9em;
+  }
+}
+
+/* Estilos para la sección de información previa a la adopción */
+.info-card {
+  background-color: #ffffff; 
+  padding: 50px 20px;
+  text-align: center;
+  margin-bottom: 50px; /* Espacio adicional debajo de la sección */
+}
+
+.info-card-content {
+  max-width: 800px;
+  margin: 0 auto;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.info-card h2 {
+  font-size: 1.8em;
+  margin-bottom: 20px;
+}
+
+.info-card p {
+  font-size: 1.1em;
+  margin-bottom: 15px;
+  line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+  .info-card-content {
+    padding: 15px;
+  }
+  
+  .info-card h2 {
+    font-size: 1.5em;
+  }
+  
+  .info-card p {
+    font-size: 1em;
+  }
+}
+
+/* Estilos para la sección de mensajes motivacionales */
+.motivational-section {
+  position: relative;
+  padding: 50px 20px;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  margin-bottom: 60px;
+}
+
+.motivational-section .background-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+  opacity: 0.7;
+}
+
+.motivational-content {
+  position: relative;
+  display: flex;
+  gap: 20px;
+  max-width: 1000px;
+  width: 100%;
+  z-index: 1;
+}
+
+.motivational-card {
+  flex: 1;
+  padding: 20px;
+  border-radius: 8px;
+  color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  max-width: 400px;
+}
+
+.left-card {
+  background-color: #f3c300; 
+  color: #333;
+}
+
+.right-card {
+  background-color: #333; 
+}
+
+.motivational-card h2 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.motivational-card p {
+  font-size: 1.1em;
+}
+
+@media (max-width: 768px) {
+  .motivational-content {
+    flex-direction: column;
+  }
+  
+  .motivational-card {
+    max-width: 90%;
+    margin-bottom: 40px;
+  }
+}
+
+@media (max-width: 480px) {
+  .motivational-card h2 {
+    font-size: 1.2em;
+  }
+  
+  .motivational-card p {
+    font-size: 1em;
+  }
+}
+
+  
+  

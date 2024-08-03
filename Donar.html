@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Salvando Huellas</title>
+  <link rel="stylesheet" href="CSS/Header-Footer.css">
+  <link rel="stylesheet" href="CSS/Donar.css">
+</head>
+<body>
+  <script src="JS/Submenu.js"></script>
+    <!-- Header -->
+
+
+<header>
+  
+  <div class="container">
+    <div class="logo">
+      <img src="IMG/Logo.jpg" alt="Logo del refugio">
+    </div>
+    <button class="menu-toggle">☰</button>
+    <nav>
+      <ul class="menu-desktop">
+        <li><a href="Inicio.html">Inicio</a></li>
+        <li><a href="Eventos.html">Eventos</a></li>
+        <li>
+          <a href="#">Adopta / Apadrina <span class="arrow">▼</span></a>
+          <ul class="submenu">
+            <li><a href="Adopcion.html">Adoptar</a></li>
+            <li><a href="Apadrinar.html">Apadrinar</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">Como Ayudar <span class="arrow">▼</span></a>
+          <ul class="submenu">
+            <li><a href="Donar.html">Donar</a></li>
+            <li><a href="Voluntarios.html">Voluntarios</a></li>
+          </ul>
+        </li>
+        <li><a href="Acerca_de.html">Quienes somos</a></li>
+        <li>
+          <a href="">Recursos <span class="arrow">▼</span></a>
+          <ul class="submenu">
+            <li><a href="Blog.html">Blog</a></li>
+            <li><a href="Refugio.html">Refugio</a></li>
+          </ul>
+        </li>
+        <li><a href="Contacto.html">Contacto</a></li>
+      </ul>
+      <ul class="menu-mobile">
+        <li><a href="Inicio.html">Inicio</a></li>
+        <li><a href="Eventos.html">Eventos</a></li>
+        <li>
+          <a href="#">Adopta / Apadrina <span class="arrow">▼</span></a>
+          <ul class="submenu">
+            <li><a href="Adopcion.html">Adoptar</a></li>
+            <li><a href="Apadrinar.html">Apadrinar</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">Como Ayudar <span class="arrow">▼</span></a>
+          <ul class="submenu">
+            <li><a href="Donar.html">Donar</a></li>
+            <li><a href="Voluntarios.html">Voluntarios</a></li>
+          </ul>
+        </li>
+        <li><a href="Acerca_de.html">Quienes somos</a></li>
+        <li>
+          <a href="#">Recursos <span class="arrow">▼</span></a>
+          <ul class="submenu">
+            <li><a href="Blog.html">Blog</a></li>
+            <li><a href="Refugio.html">Refugio</a></li>
+          </ul>
+        </li>
+        <li><a href="Contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="hero-content">
+      <h1>Ayudanos a Salvar Vidas</h1>
+      <p>cualquier tipo de donacion puede cambiar la vida de cientos de perros</p>
+      <a href="#donation-form" class="btn">Donar</a>
+  </div>
+</section>    
+
+<section id="donation-form" class="form-section">
+  <div class="container form-container">
+      <div class="form-image">
+          <img src="IMG/donar_form.jpg" alt="Image related to donations">
+      </div>
+      <div class="form-content">
+          <h2>Registrate para donar</h2>
+          <form action="submit_form.php" method="post">
+              <label for="name">Name:</label>
+              <input type="text" id="name" name="name" required>
+
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" required>
+
+              <label for="phone">Phone:</label>
+              <input type="tel" id="phone" name="phone" required>
+
+              <label for="message">Message:</label>
+              <textarea id="message" name="message" rows="4" required></textarea>
+
+              <button type="submit" class="btn">Submit</button>
+          </form>
+      </div>
+  </div>
+</section>
+<!-- Footer Section -->
+<footer>
+  <div class="left">
+      <p>&copy; 2024 Salvando Huellas. Todos los derechos reservados.</p>
+  </div>
+  <div class="right">
+      <a href="https://www.facebook.com/groups/325865846886991?locale=es_LA" target="_blank"><img src="IMG/facebook.png" alt="Facebook"></a>
+      <a href="https://www.instagram.com/salvandohuellasclobi/"><img src="IMG/instagram.png" alt="Instagram"></a>
+      <a href="https://wa.me/50495104236" target="_blank"><img src="IMG/whatsapp.png" alt="Whatsapp"></a>
+  </div>
+</footer>
+</body>
+</html>

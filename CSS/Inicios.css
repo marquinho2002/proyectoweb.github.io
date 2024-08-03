@@ -1,0 +1,342 @@
+/* Carrusel estilos */
+.carousel {
+  position: relative;
+  width: 100%;
+  height: 450px; 
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.carousel-slide {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.carousel-slide.active {
+  opacity: 1;
+}
+
+.carousel-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.carousel-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.5); /* Fondo semitransparente para mejorar la legibilidad */
+  border-radius: 10px; 
+  width: 40%;
+  height: 30%;
+}
+
+.carousel-text h2 {
+  margin: 0;
+  font-size: 2.5em;
+}
+
+.carousel-text p {
+  margin: 10px 0;
+  font-size: 20px;
+}
+
+.carousel-text .btn {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 20px;
+  color: white;
+  background-color: #fc3a3a;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.carousel-text .btn:hover {
+  background-color: #d32f2f;
+}
+
+@media (max-width: 768px) {
+  .carousel {
+    height: 350px;
+  }
+
+  .carousel-text {
+    width: 60%;
+    height: 40%;
+  }
+
+  .carousel-text h2 {
+    font-size: 2em;
+  }
+
+  .carousel-text p, .carousel-text .btn {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .carousel {
+    height: 300px;
+  }
+
+  .carousel-text {
+    width: 80%;
+    height: 50%;
+  }
+
+  .carousel-text h2 {
+    font-size: 1.5em;
+  }
+
+  .carousel-text p, .carousel-text .btn {
+    font-size: 14px;
+  }
+}
+
+/* Mission Section Styles */
+.mission-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+  background-color: #f5f5f5;
+}
+
+.mission-card {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 800px;
+  text-align: center;
+}
+
+.mission-card h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.mission-card p {
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+  .mission-card h2 {
+    font-size: 24px;
+  }
+
+  .mission-card p {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .mission-card h2 {
+    font-size: 20px;
+  }
+
+  .mission-card p {
+    font-size: 14px;
+  }
+}
+
+/* Imagen de fondo y tarjetas */
+.cards-section {
+  padding: 40px 20px;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.cards-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.card {
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card-content {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  align-items: center;
+}
+
+.card img {
+  width: 100%;
+  max-width: 300px;
+  height: 200px;
+  border-radius: 10px 0 0 10px;
+}
+
+.card-text {
+  padding: 20px;
+  flex: 1;
+  text-align: center;
+}
+
+.card-text h3 {
+  margin-top: 0;
+}
+
+.card-text p {
+  margin: 10px 0;
+}
+
+.card-text .btn {
+  margin-top: 10px;
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  color: white;
+  background-color: #fc3a3a; 
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.card-text .btn:hover {
+  background-color: #d32f2f; 
+}
+
+.card-content.reverse .card-text {
+  order: 1; /* Mueve el texto a la izquierda */
+}
+
+.card-content.reverse img {
+  order: 2; /* Mueve la imagen a la derecha */
+}
+
+@media (max-width: 768px) {
+  .card-content {
+    flex-direction: column;
+  }
+
+  .card-content.reverse {
+    flex-direction: column;
+  }
+
+  .card img {
+    width: 100%;
+    max-width: 100%;
+    border-radius: 10px 10px 0 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .card-text h3 {
+    font-size: 18px;
+  }
+
+  .card-text p {
+    font-size: 14px;
+  }
+
+  .card-text .btn {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+}
+
+/* Visitanos estilos */
+.visit-section {
+  padding: 40px 20px;
+  background-color: #f8f9fa;
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.visit-card {
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 20px;
+  max-width: 600px;
+  margin: 0 auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.visit-card h2 {
+  margin-top: 0;
+}
+
+.visit-card p {
+  margin: 20px 0;
+}
+
+.map-container {
+  margin-top: 20px;
+}
+
+.map-container iframe {
+  border: 0;
+  border-radius: 10px;
+  max-width: 100%;
+  height: 450px; 
+}
+
+@media (max-width: 768px) {
+  .visit-card {
+    padding: 15px;
+    margin-bottom: 40px;
+  }
+
+  .visit-card h2 {
+    font-size: 24px;
+  }
+
+  .visit-card p {
+    font-size: 16px;
+  }
+
+  .map-container iframe {
+    height: 350px;
+  }
+}
+
+@media (max-width: 480px) {
+  .visit-card {
+    padding: 10px;
+  }
+
+  .visit-card h2 {
+    font-size: 20px;
+  }
+
+  .visit-card p {
+    font-size: 14px;
+  }
+
+  .map-container iframe {
+    height: 300px;
+  }
+}
+
+
+
+
+
+
+  
+  
+  

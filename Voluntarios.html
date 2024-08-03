@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Salvando Huellas</title>
+  <link rel="stylesheet" href="CSS/Header-Footer.css">
+  <link rel="stylesheet" href="CSS/Voluntatios.css"
+</head>
+<body>
+  <script src="JS/Submenu.js"></script>
+    <!-- Header -->
+<header>
+  <div class="container">
+    <div class="logo">
+      <img src="IMG/Logo.jpg" alt="Logo del refugio">
+    </div>
+    <button class="menu-toggle">☰</button>
+    <nav>
+      <ul class="menu-desktop">
+        <li><a href="Inicio.html">Inicio</a></li>
+        <li><a href="Eventos.html">Eventos</a></li>
+        <li>
+          <a href="#">Adopta / Apadrina <span class="arrow">▼</span></a>
+          <ul class="submenu">
+            <li><a href="Adopcion.html">Adoptar</a></li>
+            <li><a href="Apadrinar.html">Apadrinar</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">Como Ayudar <span class="arrow">▼</span></a>
+          <ul class="submenu">
+            <li><a href="Donar.html">Donar</a></li>
+            <li><a href="Voluntarios.html">Voluntarios</a></li>
+          </ul>
+        </li>
+        <li><a href="Acerca_de.html">Quienes somos</a></li>
+        <li>
+          <a href="">Recursos <span class="arrow">▼</span></a>
+          <ul class="submenu">
+            <li><a href="Blog.html">Blog</a></li>
+            <li><a href="Refugio.html">Refugio</a></li>
+          </ul>
+        </li>
+        <li><a href="Contacto.html">Contacto</a></li>
+      </ul>
+      <ul class="menu-mobile">
+        <li><a href="Inicio.html">Inicio</a></li>
+        <li><a href="Eventos.html">Eventos</a></li>
+        <li>
+          <a href="#">Adopta / Apadrina <span class="arrow">▼</span></a>
+          <ul class="submenu">
+            <li><a href="Adopcion.html">Adoptar</a></li>
+            <li><a href="Apadrinar.html">Apadrinar</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">Como Ayudar <span class="arrow">▼</span></a>
+          <ul class="submenu">
+            <li><a href="Donar.html">Donar</a></li>
+            <li><a href="Voluntarios.html">Voluntarios</a></li>
+          </ul>
+        </li>
+        <li><a href="Acerca_de.html">Quienes somos</a></li>
+        <li>
+          <a href="#">Recursos <span class="arrow">▼</span></a>
+          <ul class="submenu">
+            <li><a href="Blog.html">Blog</a></li>
+            <li><a href="Refugio.html">Refugio</a></li>
+          </ul>
+        </li>
+        <li><a href="Contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="hero-content">
+    <img src="IMG/Volunteer-Webpage.jpg" alt="Voluntarios">
+
+  </div>
+
+</section>
+
+
+<section class="volunteer-section">
+  <h2>Conoce a los Voluntarios</h2>
+  <div class="volunteer-cards">
+      <div class="card">
+          <img src="IMG/volunteer1.jpg" alt="Volunteer 1">
+          <h3>John Doe</h3>
+          <p>Haz la diferencia!</p>
+          <a href="Acerca_de.html" class="round-button">Saber Mas</a>
+      </div>
+      <div class="card">
+          <img src="IMG/volunteer2.jpg" alt="Volunteer 2">
+          <h3>Joseph Smith</h3>
+          <p>Salvemos vidas caninas juntos</p>
+          <a href="Acerca_de.html" class="round-button">Saber Mas</a>
+      </div>
+      <div class="card">
+          <img src="IMG/volunteer3.jpg" alt="Volunteer 3">
+          <h3>Lionel"The Goat" Messi</h3>
+          <p>Sacaremos a todos de las calles </p>
+          <a href="Acerca_de.html" class="round-button">Saber Mas</a>
+      </div>
+  </div>
+</section>
+<br>
+
+<section class="volunteer-registration">
+  <div class="container">
+      <div class="form-image">
+          <img src="IMG/volunteer.jpg" alt="Volunteering Image">
+      </div>
+      <div class="form-content">
+          <h2>Registrate Como Voluntario</h2>
+          <form action="submit_form.php" method="post">
+              <label for="name">Nombre:</label>
+              <input type="text" id="name" name="name" required>
+
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" required>
+
+              <label for="phone">Telefono:</label>
+              <input type="tel" id="phone" name="phone" required>
+
+              <label for="message">Comentario:</label>
+              <textarea id="message" name="message" rows="4" required></textarea>
+
+              <button type="submit" class="btn">Submit</button>
+          </form>
+      </div>
+  </div>
+</section>
+
+
+
+
+<!-- Footer Section -->
+
+<br>
+
+<footer>
+  <div class="left">
+      <p>&copy; 2024 Salvando Huellas. Todos los derechos reservados.</p>
+  </div>
+  <div class="right">
+      <a href="https://www.facebook.com/groups/325865846886991?locale=es_LA" target="_blank"><img src="IMG/facebook.png" alt="Facebook"></a>
+      <a href="https://www.instagram.com/salvandohuellasclobi/"><img src="IMG/instagram.png" alt="Instagram"></a>
+      <a href="https://wa.me/50495104236" target="_blank"><img src="IMG/whatsapp.png" alt="Whatsapp"></a>
+  </div>
+</footer>
+</body>
+</html>
